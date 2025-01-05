@@ -112,11 +112,6 @@ brew install ffmpeg
 ### Permission Denied
 Ensure the script has write permissions for the specified output directory.
 
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
