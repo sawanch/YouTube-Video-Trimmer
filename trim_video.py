@@ -1,11 +1,11 @@
 from moviepy.video.io.VideoFileClip import VideoFileClip
 
 # Path to the downloaded video
-video_path = "/Users/sawan/Desktop/cricket-video/downloaded_video.mp4"
+video_path = "/Users/sawan/Documents/1-Coding-Practise-RW/Video-Trimming-Practise/YouTube-Video-Trimmer/downloaded_video.mp4"
 
 # Convert times to seconds
-start_time = 44 * 60 + 40  # 44 minutes and 40 seconds
-end_time = 45 * 60 + 35    # 45 minutes and 35 seconds
+start_time = 12 * 60 + 42  # 44 minutes and 40 seconds
+end_time = 12 * 60 + 53    # 45 minutes and 35 seconds
 
 # Load the video and trim
 try:
@@ -20,7 +20,7 @@ try:
         raise AttributeError("The 'subclip' method is missing in this MoviePy version.")
 
     # Save the trimmed video
-    output_path = "/Users/sawan/Desktop/cricket-video/trimmed_video.mp4"
+    output_path = "/Users/sawan/Documents/1-Coding-Practise-RW/Video-Trimming-Practise/YouTube-Video-Trimmer/trimmed_video.mp4"
     trimmed_clip.write_videofile(output_path, codec="libx264")
 
     print(f"Trimmed video saved to {output_path}")
